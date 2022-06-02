@@ -11,14 +11,14 @@ def test_get_delta():
     assert get_delta(8,12,0) == 144
 
 def test_get_first_x():
-    assert get_first_x(2, 5, 23) == -0.2041684766872809
-    assert get_first_x(-5, 3, 7) == 0.8856217223385232
-    assert get_first_x(8, -4, 5) == 24.94427190999916
+    assert get_first_x(2, 5, 23) == -0.05104211917182022
+    assert get_first_x(-5, 3, 7) == 0.03542486889354093
+    assert get_first_x(8, -4, 5) == 0.38975424859373686
 
 def test_get_second_x():
-    assert get_second_x(8, -4, 5) == 7.055728090000841
-    assert get_second_x(-5, 6, 8) == 22.071067811865476
-    assert get_second_x(12, 6, 3) == -46.392304845413264
+    assert get_second_x(8, -4, 5) == 0.11024575140626314
+    assert get_second_x(-5, 6, 8) == 0.882842712474619
+    assert get_second_x(12, 6, 3) == -0.3221687836487032
 
 
 

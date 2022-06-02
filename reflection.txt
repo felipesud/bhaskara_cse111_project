@@ -1,0 +1,17 @@
+Please respond thoroughly (at least two sentences for each question) to
+the following three questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+At first, I was a little lost and by applying the content in extra exercises I could see how much easier it is to develop using functions.
+Today I can't think of a "loose" code on the screen, I can only see numbers on a mission.
+
+
+2. In your judgment, what is the value of test functions?
+First, it helps to monitor the behavior of my system's functions, that is, I can tell if it's failing, even before running the entire code to the user.
+The other advantage is how much time you save worrying about tests, after all, rework can be harmful to the project.
+
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+I  try to break the problem into smaller pieces that I can solve with what I know of the language to put together a "puzzle" with this problem. I need to improve prior knowledge, knowing different paradigms, functions, etc. So that when I come across a similar problem, I have baggage and a source to find.

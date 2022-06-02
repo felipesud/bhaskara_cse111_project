@@ -10,6 +10,7 @@ def main():
     delta = get_delta(a, b, c)
     x1 = get_first_x(a, b, delta)
     x2 = get_second_x(a, b, delta)
+    csv = write_csv('bhaskara.csv', a, b, c, delta, x1, x2)
 
     print(f'\nIn the {a}x² + ({b}x) + ({c}) equation, the result of Bhaskara formula is: ') 
     print(f'x1 = {x1:.02f} and x2 = {x2:.02f}') 
@@ -23,28 +24,32 @@ def get_delta(a, b, c):
 def get_first_x(a, b, delta):
     x = 0
     if delta > 0:
-        x = ((-1 * b) + (math.sqrt(delta)))/2 * a
+        x = (-1 * b) + (math.sqrt(delta))
+        x /= 2 * a
     elif delta == 0:
-         x = (-1 * b)/2 * a
+         x = (-1 * b)
+         x /= 2 * a
     elif delta < 0:
-        print('Delta under zero')
+        print('Delta under zero. Try again')
     return x
     
 def get_second_x(a, b, delta):
     x = 0
     if delta > 0:
-        x = ((-1 * b) - (math.sqrt(delta)))/2 * a
+        x = (-1 * b) - (math.sqrt(delta))
+        x /= 2 * a
     elif delta == 0:
-        x = (-1 * b)/2 * a
+        x = (-1 * b)
+        x /= 2 * a
     elif delta < 0:
-        print('Delta under zero')
+        print('Delta under zero. Try again')
     return x
 
-def write_csv(a, b, c, delta, x1, x2):
-    pass
+def write_csv(filename, a, b, c, delta, x1, x2):
 
-def read_csv():
-    pass
+    with open(filename, 'w') as csvfile:
+
+        csv.writer(csvfile, delimiter =',').writerow([f'A = {a}, B = {b}, C = {c}, Delta = {delta}, x1 = {x1:.02f}  x2 = {x2:.02f} '])
 
 
 def print_elements(option): 
